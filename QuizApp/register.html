@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Register - QuizPop</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-lav">
+  <div class="container d-flex justify-content-center align-items-center" style="min-height:90vh">
+    <div class="card p-4 rounded-4 shadow-sm register-card">
+      <h3 class="text-center mb-3">Register</h3>
+      <form action="register" method="post" novalidate>
+        <div class="mb-2">
+          <label class="form-label">Name</label>
+          <input name="name" required class="form-control rounded-pill" required>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Email</label>
+          <input name="email" type="email" required class="form-control rounded-pill" required>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Phone</label>
+          <input name="phone" class="form-control rounded-pill" required>
+        </div>
+        <div class="mb-2">
+          <label class="form-label">Username</label>
+          <input name="username" required class="form-control rounded-pill" required>
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Password</label>
+          <input name="password" type="password" required class="form-control rounded-pill" required>
+        </div>
+        <!-- server may return with an error message which will be printed by servlet when needed -->
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary rounded-pill" type="submit">Register</button>
+          <a class="text-center" href="login.html">Already have account? Login</a>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
