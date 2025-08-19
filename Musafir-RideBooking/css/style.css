@@ -1,0 +1,9 @@
+@charset "ISO-8859-1";
+body {
+  background-color: #1e1e1e;
+  color: #ddd;
+  font-family: Arial, sans-serif;
+}
+.btn-danger { background-color:#c62828; border:none; }
+.navbar { border-radius: 12px; }
+.footer { background:#111; color:#aaa; padding:20px; text-align:center; margin-top:20px; }
